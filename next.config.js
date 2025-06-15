@@ -1,19 +1,38 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c01cbeb (deploy inicial)
+const path = require('path');
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-  images: {
-    domains: ["lh3.googleusercontent.com", "vercel.com"],
+<<<<<<< HEAD
+  typescript: {
+    ignoreBuildErrors: true,
   },
-  async redirects() {
-    return [
-      {
-        source: "/github",
-        destination: "https://github.com/steven-tey/precedent",
-        permanent: false,
-      },
-    ];
+  webpack(config) {
+    config.resolve.alias['@'] = path.resolve(__dirname);
+    return config;
   },
 };
 
 module.exports = nextConfig;
+=======
+module.exports = {
+=======
+>>>>>>> c01cbeb (deploy inicial)
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  webpack(config) {
+    config.resolve.alias['@'] = path.resolve(__dirname);
+    return config;
+  },
+<<<<<<< HEAD
+}
+>>>>>>> 720475b (Primeiro commit - projeto Social Genius IA)
+=======
+};
+
+module.exports = nextConfig;
+>>>>>>> c01cbeb (deploy inicial)
